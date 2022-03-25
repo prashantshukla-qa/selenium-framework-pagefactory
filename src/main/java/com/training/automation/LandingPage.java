@@ -7,16 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
 
-    WebDriver driver;
-
-    @FindBy(id = "username")
-    WebElement userName;
+    @FindBy(css = "a.login")
+    private WebElement loginLink;
 
     public LandingPage(WebDriver driver) {
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-
+    public void navigateToLoginPage() {
+        this.loginLink.click();
+    }
 
 }

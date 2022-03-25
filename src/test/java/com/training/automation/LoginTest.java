@@ -8,6 +8,7 @@ public class LoginTest extends BaseClass{
     @Test
     public void testLogin() {
         launchApplication();
+        landingPage.navigateToLoginPage();
         loginPage.loginToTheApplication("tutorial", "tutorial");
     }
 

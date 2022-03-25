@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
     private WebDriver driver;
@@ -12,10 +14,11 @@ public class BaseClass {
     LoginPage loginPage;
     LandingPage landingPage;
 
-    final String URL = "http://newtours.demoaut.com/";
+    final String URL = "http://automationpractice.com/index.php";
 
     @BeforeClass
     public void setup() {
+        WebDriverManager.chromedriver().setup();
         this.driver = new ChromeDriver();
         this.loginPage = new LoginPage(driver);
         this.landingPage = new LandingPage(driver);

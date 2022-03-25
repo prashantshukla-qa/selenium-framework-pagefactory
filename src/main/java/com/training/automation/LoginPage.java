@@ -7,19 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    WebDriver driver;
-
-    @FindBy(id = "username")
+    @FindBy(id = "email")
     private WebElement userName;
 
-    @FindBy(id = "password")
+    @FindBy(id = "passwd")
     private WebElement password;
 
-    @FindBy(id = "login")
+    @FindBy(id = "SubmitLogin")
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
