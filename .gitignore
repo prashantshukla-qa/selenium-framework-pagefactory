@@ -1,6 +1,7 @@
 # output files
 /target
 /test-output
+.allure/
 
 # Compiled class file
 *.class

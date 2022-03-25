@@ -26,7 +26,7 @@ public class BaseClass {
 
     @AfterClass
     public void teardown() {
-        this.driver.close();
+        this.driver.quit();
     }
 
     public WebDriver getDriver() {
