@@ -13,6 +13,7 @@ public class BaseClass {
 
     LoginPage loginPage;
     LandingPage landingPage;
+    FacebookLoginPage facebookloginPage;
 
     final String URL = "http://automationpractice.com/index.php";
 
@@ -22,6 +23,7 @@ public class BaseClass {
         this.driver = new ChromeDriver();
         this.loginPage = new LoginPage(driver);
         this.landingPage = new LandingPage(driver);
+        this.facebookloginPage = new FacebookLoginPage(driver);
     }
 
     @AfterClass
