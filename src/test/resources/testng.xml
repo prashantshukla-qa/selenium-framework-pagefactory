@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Parallel" parallel="tests" thread-count="5">
+    <test name="Facebook Test">
+        <classes>
+            <class name="com.training.automation.FacebookLoginTest" />
+        </classes>
+    </test>
+    <test name="Automation Practice Test">
+        <classes>
+            <class name="com.training.automation.AutomationPracticeLogintest" />
+        </classes>
+    </test>
+</suite>

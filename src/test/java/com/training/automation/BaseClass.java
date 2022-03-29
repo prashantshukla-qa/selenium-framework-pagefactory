@@ -1,7 +1,5 @@
 package com.training.automation;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
