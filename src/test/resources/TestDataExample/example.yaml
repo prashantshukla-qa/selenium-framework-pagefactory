@@ -1,0 +1,7 @@
+TestData:
+  browser: chrome
+  enviroment:
+    url: https://www.google.com
+    user:
+      name: admin
+      password: admin

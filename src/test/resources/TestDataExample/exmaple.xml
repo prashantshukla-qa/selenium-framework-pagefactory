@@ -1,0 +1,8 @@
+<TestData>
+    <browser>Chrome</browser>
+    <environment>
+        <URL>http://qa.test.com</URL>
+        <username>admin</username>
+        <password>admin</password>
+    </environment>
+</TestData>

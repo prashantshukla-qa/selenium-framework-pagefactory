@@ -1,0 +1,10 @@
+{
+    "TestData": {
+        "browser": "Chrome",
+        "environment": {
+            "url": "https://www.google.com",
+            "username": "admin",
+            "password": "password"
+        }
+    }
+}
