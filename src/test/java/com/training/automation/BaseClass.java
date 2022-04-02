@@ -16,6 +16,9 @@ public class BaseClass {
     FacebookLoginPage facebookloginPage;
     MakeMyTripPage makeMyTripPage;
 
+    /**
+     * URL is the default test URL
+     */
     final String URL = "http://automationpractice.com/index.php";
 
     @BeforeClass
