@@ -10,6 +10,10 @@ public class LoginTest extends BaseClass{
         launchApplication();
         landingPage.navigateToLoginPage();
         loginPage.loginToTheApplication("tutorial", "tutorial");
+        screenshot.takeScreenshot();
+
+        searchpage.addToCart();
+
     }
 
     

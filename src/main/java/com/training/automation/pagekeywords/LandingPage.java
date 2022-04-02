@@ -1,4 +1,4 @@
-package com.training.automation;
+package com.training.automation.pagekeywords;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

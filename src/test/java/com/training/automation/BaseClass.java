@@ -1,5 +1,12 @@
 package com.training.automation;
 
+import com.training.automation.pagekeywords.LandingPage;
+import com.training.automation.pagekeywords.LoginPage;
+import com.training.automation.pagekeywords.searchpages.AmazonSearchPage;
+import com.training.automation.pagekeywords.searchpages.FlipkartSearchPage;
+import com.training.automation.pagekeywords.searchpages.SerachResultPage;
+import com.training.automation.utils.Screenshot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -13,8 +20,13 @@ public class BaseClass {
 
     LoginPage loginPage;
     LandingPage landingPage;
+    Screenshot screenshot;
 
-    final String URL = "http://automationpractice.com/index.php";
+    SerachResultPage searchpage;
+
+    private String URL;
+
+    //final String URL = "http://automationpractice.com/index.php";
 
     @BeforeClass
     public void setup() {
@@ -22,6 +34,13 @@ public class BaseClass {
         this.driver = new ChromeDriver();
         this.loginPage = new LoginPage(driver);
         this.landingPage = new LandingPage(driver);
+        this.screenshot = new Screenshot(driver);
+        if(URL.contains("amazon")){
+            this.searchpage = new AmazonSearchPage(driver);
+        }
+        else{
+            this.searchpage = new FlipkartSearchPage(driver);
+        }
     }
 
     @AfterClass
@@ -40,4 +59,9 @@ public class BaseClass {
     public void launchApplication(String url) {
         this.driver.get(url);
     }
+
+    private void seturl(String url){
+        this.URL = url;
+    }
+    
 }
