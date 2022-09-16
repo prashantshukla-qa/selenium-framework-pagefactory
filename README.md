@@ -15,4 +15,4 @@
 ### To Execute Tests
 
   1. testng test: mvn clean test -Dtest=**test_name**
-    1. e.g. for login test test_name = ReadyEducationLoginTest
+    1. e.g. for login test test_name = LoginTest
