@@ -2,6 +2,7 @@
 /target
 /test-output
 .allure/
+screenshot.png
 
 # Compiled class file
 *.class
