@@ -12,7 +12,7 @@ public class FacebookLoginTest extends BaseClass {
         System.out.println(pages.facebookloginpage.getErrorMessage());
 
         Assert.assertEquals(pages.facebookloginpage.getErrorMessage(),
-                "The email address or mobile number you entered isn't connected to an account. Find your account and log in. Prashant");
+                "The email address or mobile number you entered isn't connected to an account. Find your account and log in.");
     }
 
 }
