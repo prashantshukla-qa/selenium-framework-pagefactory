@@ -22,4 +22,8 @@ public class BaseClass {
     public void launchApplication(){
         pages.driver.get(ConfigFileReader.getValue("URL"));
     }
+
+    public void launchApplication(String url){
+        pages.driver.get(url);
+    }
 }
