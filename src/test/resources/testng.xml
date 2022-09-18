@@ -11,4 +11,9 @@
             <class name="com.qagenic.automation.LoginTest" />
         </classes>
     </test>
+    <test name="Wikipedia Test">
+        <classes>
+            <class name="com.qagenic.automation.WikipediaTest" />
+        </classes>
+    </test>
 </suite>
