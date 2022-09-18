@@ -22,6 +22,8 @@ public class WebDriverInit {
                 break;
             case "safari":
                 driver = WebDriverManager.safaridriver().create();
+            case "edge":
+                driver = WebDriverManager.edgedriver().create();
             default:
                 driver = WebDriverManager.chromedriver().create();
                 break;
