@@ -1,5 +1,7 @@
 package com.qagenic.automation;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 
 import com.qagenic.automation.pageobjects.FacebookLoginPage;
@@ -16,7 +18,7 @@ public class PageInitiator {
     WikipediaPage wikipediapage;
     TakeScreenshot takeScreenshot;
 
-    public PageInitiator(){
+    public PageInitiator() throws MalformedURLException{
         this.driver = new WebDriverInit().createWebDriver();
         this.landingpage = new LandingPage(driver);
         this.loginpage = new LoginPage(driver);

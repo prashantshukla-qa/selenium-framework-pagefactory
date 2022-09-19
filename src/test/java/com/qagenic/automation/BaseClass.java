@@ -1,5 +1,7 @@
 package com.qagenic.automation;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -10,7 +12,7 @@ public class BaseClass {
     PageInitiator pages;
 
     @BeforeClass
-    public void test_setup() {
+    public void test_setup() throws MalformedURLException {
         pages = new PageInitiator();
     }
 
